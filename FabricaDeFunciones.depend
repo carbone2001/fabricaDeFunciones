@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1554153317 source:c:\users\lucas\desktop\utn\fabricadefunciones\fnkit.c
+	<stdio.h>
+	<stdlib.h>
+
+1554153499 source:c:\users\lucas\desktop\utn\fabricadefunciones\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fnKit.h"
+
+1554153387 c:\users\lucas\desktop\utn\fabricadefunciones\fnkit.h
+
