@@ -93,3 +93,59 @@ int getInt(int*input,char*msj,char*eMsj,int minimo,int maximo) //TERMINAR
 {
     return 0;
 }
+
+void fnOrdAscendente(int * nombreVector, int sizeVector)
+{
+    int i;
+    int j;
+    int aux;
+    int vector[sizeVector];
+    for(i=0;i<sizeVector;i++)
+    {
+        vector[i]=nombreVector[i];
+    }
+    for(i=0;i<sizeVector-1;i++)
+    {
+        for(j=i+1;j<sizeVector;j++)
+        {
+            if(vector[i]>vector[j])
+            {
+                aux=vector[i];
+                vector[i]=vector[j];
+                vector[j]=aux;
+            }
+        }
+    }
+    for(i=0;i<sizeVector;i++)
+    {
+        nombreVector[i]=vector[i];
+    }
+}
+
+void fnOrdDescendente(int * nombreVector, int sizeVector)
+{
+    int i;
+    int j;
+    int aux;
+    int vector[sizeVector];
+    for(i=0;i<sizeVector;i++)
+    {
+        vector[i]=nombreVector[i];
+    }
+    for(i=0;i<sizeVector-1;i++)
+    {
+        for(j=i+1;j<sizeVector;j++)
+        {
+            if(vector[i]<vector[j])
+            {
+                aux=vector[i];
+                vector[i]=vector[j];
+                vector[j]=aux;
+            }
+        }
+    }
+    for(i=0;i<sizeVector;i++)
+    {
+        nombreVector[i]=vector[i];
+    }
+}

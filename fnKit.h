@@ -10,3 +10,7 @@ int ffactorial(int x);
  */
 int getIntIntentos(int* input,char* msj,char* eMsj,int minimo,int maximo,int reintentos);
 int getInt(int*input,char*msj,char*eMsj,int minimo,int maximo);
+
+void fnOrdAscendente(char * nombreVector, int sizeVector);
+
+void fnOrdDescendente(int * nombreVector, int sizeVector);
