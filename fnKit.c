@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 int ffactorial(int x)
 {
     int i;
@@ -32,13 +33,7 @@ int ffactorial(int x)
 
     return fact;
 }
-/** \brief Verifica el dato de una variable declarada en la funcion que la llama. Intentos configurables
- *
- * \param
- * \param
- * \return
- *
- */
+
 
 int getIntIntentos(int* input,char* msj,char* eMsj,int minimo,int maximo,int reintentos)
 {
@@ -89,9 +84,13 @@ int getIntIntentos(int* input,char* msj,char* eMsj,int minimo,int maximo,int rei
     return error;
 }
 
-int getInt(int*input,char*msj,char*eMsj,int minimo,int maximo) //TERMINAR
+int getInt(char * msj) //TERMINAR
 {
-    return 0;
+    int aux;
+    printf("%s",msj);
+    scanf("%d",&aux);
+
+    return aux;
 }
 
 void fnOrdAscendente(int * nombreVector, int sizeVector)
@@ -149,3 +148,49 @@ void fnOrdDescendente(int * nombreVector, int sizeVector)
         nombreVector[i]=vector[i];
     }
 }
+
+int getRandom(int primerNumero, int ultimoNumero,int primeraVez)
+{
+    if(primeraVez)
+    {
+        srand(time(NULL));
+    }
+    int random;
+    random=primerNumero+(rand()%((ultimoNumero+1)-primerNumero));
+    return random;
+}
+void fnOrdIncertion(int * vector,int lenght)
+{
+    int i;
+    int j;
+    int aux;
+    for(i=1;i<lenght;i++)
+    {
+        aux=vector[i];
+        j=i-1;
+        while(aux<vector[j]&&j>=0)
+        {
+            vector[j+1]=vector[j];
+            j--;
+        }
+        vector[j+1]=aux;
+    }
+}
+
+int getChar(char*msj,char letraCorrecta)
+{
+    int confirmacion;
+    char letraEntrada;
+    confirmacion=0;
+    printf("%s",msj);
+    scanf("%c",&letraEntrada);
+
+    if(letraEntrada==letraCorrecta)
+    {
+        confirmacion=1;
+    }
+    return confirmacion;
+
+
+}
+

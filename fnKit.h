@@ -11,6 +11,14 @@ int ffactorial(int x);
 int getIntIntentos(int* input,char* msj,char* eMsj,int minimo,int maximo,int reintentos);
 int getInt(int*input,char*msj,char*eMsj,int minimo,int maximo);
 
-void fnOrdAscendente(char * nombreVector, int sizeVector);
+void fnOrdAscendente(int * nombreVector, int sizeVector);
 
 void fnOrdDescendente(int * nombreVector, int sizeVector);
+
+int getRandom(int primerNumero, int ultimoNumero,int primeraVez);
+
+void fnOrdIncertion(int vector[],int lenght);
+
+int getChar(char * mensaje,char letraCorrecta);
+
+
