@@ -23,3 +23,19 @@
 
 1554297807 c:\users\alumno\desktop\fabricadefunciones\fnkit.h
 
+1555788628 source:c:\users\lucas\desktop\fabricadefunciones\proyecto fabricador\fnkit.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fnKit.h"
+
+1555788528 source:c:\users\lucas\desktop\fabricadefunciones\proyecto fabricador\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fnKit.h"
+	<time.h>
+
+1555788366 c:\users\lucas\desktop\fabricadefunciones\proyecto fabricador\fnkit.h
+

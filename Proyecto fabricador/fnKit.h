@@ -1,3 +1,13 @@
+typedef struct
+{
+    char nombre[20];
+    int legajo;
+    float sueldo;
+    int estado;
+
+}persona;
+
+
 /** \brief Realiza una operacion de factorial y devuelve el resultado
  * \param x e y son las variables de tipo entero que se utilizaran para operar.
  * \return El resultado de tipo entero del factorial de las variables ingresadas.
@@ -9,16 +19,20 @@ int ffactorial(int x);
  * \return 1 En caso de superar la cantidad de reintentos (si los hay) y 0 en caso de que no haya habido errores.
  */
 int getIntIntentos(int* input,char* msj,char* eMsj,int minimo,int maximo,int reintentos);
-int getInt(int*input,char*msj,char*eMsj,int minimo,int maximo);
+int getIntPlus(int*input,char*msj,char*eMsj,int minimo,int maximo);
 
-void fnOrdAscendente(int * nombreVector, int sizeVector);
+void ordAs(int * nombreVector, int sizeVector);
 
-void fnOrdDescendente(int * nombreVector, int sizeVector);
+void ordDes(int * nombreVector, int sizeVector);
 
 int getRandom(int primerNumero, int ultimoNumero,int primeraVez);
 
-void fnOrdIncertion(int vector[],int lenght);
+void ordIncer(int vector[],int lenght);
 
 int getChar(char * mensaje,char letraCorrecta);
 
+void ordAsStructStr(persona pers[],int tam);
 
+void lwrStruct(persona pers[],int tam);
+
+void getFloat(float *input,char*msj,char*eMsj,float minimo,float maximo);

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
+#include "fnKit.h"
 int ffactorial(int x)
 {
     int i;
@@ -84,16 +86,20 @@ int getIntIntentos(int* input,char* msj,char* eMsj,int minimo,int maximo,int rei
     return error;
 }
 
-int getInt(char * msj) //TERMINAR
+int getIntPlus(int*input,char*msj,char*eMsj,int minimo,int maximo) //TERMINAR
 {
     int aux;
     printf("%s",msj);
-    scanf("%d",&aux);
-
+    scanf("%d",input);
+    while(aux>maximo || aux<minimo)
+    {
+        printf("%s",eMsj);
+        scanf("%d",input);
+    }
     return aux;
 }
 
-void fnOrdAscendente(int * nombreVector, int sizeVector)
+void ordAs(int * nombreVector, int sizeVector)
 {
     int i;
     int j;
@@ -121,7 +127,7 @@ void fnOrdAscendente(int * nombreVector, int sizeVector)
     }
 }
 
-void fnOrdDescendente(int * nombreVector, int sizeVector)
+void ordDes(int * nombreVector, int sizeVector)
 {
     int i;
     int j;
@@ -159,7 +165,7 @@ int getRandom(int primerNumero, int ultimoNumero,int primeraVez)
     random=primerNumero+(rand()%((ultimoNumero+1)-primerNumero));
     return random;
 }
-void fnOrdIncertion(int * vector,int lenght)
+void ordIncer(int * vector,int lenght)
 {
     int i;
     int j;
@@ -190,7 +196,47 @@ int getChar(char*msj,char letraCorrecta)
         confirmacion=1;
     }
     return confirmacion;
-
-
+}
+void ordAsStructStr(persona pers[],int tam)
+{
+    int i;
+    int j;
+    persona aux;
+    for(i=0;i<tam;i++)
+    {
+        strlwr(pers[i].nombre);
+    }
+    for(i=0;i<tam-1;i++)
+    {
+        for(j=i+1;j<tam;j++)
+        {
+            if((strcmp(pers[i].nombre,pers[j].nombre))>0 && (pers[i].estado==1 && pers[j].estado==1))
+            {
+                aux=pers[i];
+                pers[i]=pers[j];
+                pers[j]=aux;
+            }
+        }
+    }
 }
 
+void lwrStruct(persona pers[],int tam)
+{
+    int i;
+    for(i=0;i<tam;i++)
+    {
+        strlwr(pers[i].nombre);
+    }
+}
+void getFloat(float *input,char*msj,char*eMsj,float minimo,float maximo)
+{
+    float aux;
+    printf("%s",msj);
+    scanf("%f",&aux);
+    while(aux>=maximo || aux<=minimo)
+    {
+        printf("%s",eMsj);
+        scanf("%f",&aux);
+    }
+    *input=aux;
+}
