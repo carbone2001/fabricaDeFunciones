@@ -23,19 +23,35 @@
 
 1554297807 c:\users\alumno\desktop\fabricadefunciones\fnkit.h
 
-1555788628 source:c:\users\lucas\desktop\fabricadefunciones\proyecto fabricador\fnkit.c
+1556379260 source:c:\users\lucas\desktop\fabricadefunciones\proyecto fabricador\fnkit.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	<string.h>
 	"fnKit.h"
 
-1555788528 source:c:\users\lucas\desktop\fabricadefunciones\proyecto fabricador\main.c
+1556379348 source:c:\users\lucas\desktop\fabricadefunciones\proyecto fabricador\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"fnKit.h"
 	<time.h>
 
-1555788366 c:\users\lucas\desktop\fabricadefunciones\proyecto fabricador\fnkit.h
+1556379260 c:\users\lucas\desktop\fabricadefunciones\proyecto fabricador\fnkit.h
+
+1556379260 source:d:\escritorio\fabricadefunciones\proyecto fabricador\fnkit.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fnKit.h"
+
+1556379260 d:\escritorio\fabricadefunciones\proyecto fabricador\fnkit.h
+
+1556999199 source:d:\escritorio\fabricadefunciones\proyecto fabricador\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fnKit.h"
+	<time.h>
 

@@ -240,3 +240,55 @@ void getFloat(float *input,char*msj,char*eMsj,float minimo,float maximo)
     }
     *input=aux;
 }
+int getString(char str[],char*msj,char*eMsj,int limite,int intentos)
+{
+    int error;
+    int contador;
+    contador=0;
+    error=0;
+    if(intentos!=0)
+    {
+        printf(msj);
+        fflush(stdin);
+        gets(str);
+        contador++;
+        while(strlen(str)>limite && contador<intentos)
+        {
+            printf(eMsj);
+            fflush(stdin);
+            gets(str);
+            if(strlen(str)<=limite)
+            {
+                error=0;
+                break;
+            }
+            printf(msj);
+            error=1;
+            contador++;
+        }
+    }
+    else
+    {
+        printf(msj);
+        fflush(stdin);
+        gets(str);
+        while(strlen(str)>limite)
+        {
+            printf(eMsj);
+
+            fflush(stdin);
+            gets(str);
+            if(strlen(str)<=limite)
+            {
+                error=0;
+                break;
+            }
+            printf(msj);
+            error=1;
+            contador++;
+        }
+
+    }
+    return error;
+}
+

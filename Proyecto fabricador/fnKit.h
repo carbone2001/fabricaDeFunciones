@@ -36,3 +36,5 @@ void ordAsStructStr(persona pers[],int tam);
 void lwrStruct(persona pers[],int tam);
 
 void getFloat(float *input,char*msj,char*eMsj,float minimo,float maximo);
+
+int getString(char str[],char*msj,char*eMsj,int limite,int intentos);
