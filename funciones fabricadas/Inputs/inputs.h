@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 #ifndef INPUTS_H_INCLUDED
 #define INPUTS_H_INCLUDED
 
 
 
+=======
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 /** \brief Solicita un dato de tipo entero y luego evalua si este dato corresponde segun los parametros dados.
  * \param input int* La direccion de la variable donde se escribira el valor ingresado
  * \param msj char* Mensaje que solicita el ingreso de un numero
@@ -13,7 +16,15 @@
  * \return int Si hubo error (1) o no (0)
  */
 int getIntIntentos(int* input,char* msj,char* eMsj,int minimo,int maximo,int reintentos);
+<<<<<<< HEAD
 
+=======
+/** \brief Solicita un dato de tipo entero
+ * \param msj char* Mensaje que solicita el ingreso de un numero
+ * \return int El entero ingresado.
+ */
+int getInt(char * msj);
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 /** \brief Solicita un dato de tipo entero y luego evalua si este dato corresponde segun los parametros dados. No tiene reintentos.
  *
  * \param int*input La direccion de la variable donde se escribira el valor ingresado
@@ -24,9 +35,13 @@ int getIntIntentos(int* input,char* msj,char* eMsj,int minimo,int maximo,int rei
  * \return void
  *
  */
+<<<<<<< HEAD
 int getInt(int*input,char*msj,char*eMsj,int minimo,int maximo);
 
 
+=======
+void getIntPlus(int*input,char*msj,char*eMsj,int minimo,int maximo);
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 /** \brief Solicita un dato de tipo flotante y luego evalua si este dato corresponde segun los parametros dados. No tiene reintentos.
  *
  * \param int*input La direccion de la variable donde se escribira el valor ingresado
@@ -37,7 +52,11 @@ int getInt(int*input,char*msj,char*eMsj,int minimo,int maximo);
  * \return void
  *
  */
+<<<<<<< HEAD
 void getFloatPlus(float*input,char*msj,char*eMsj,float minimo,float maximo);
+=======
+void getFloatPlus(float*input,char*msj,char*eMsj,int minimo,int maximo);
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 /** \brief Se genera un numero aleatorio
  *
  * \param primerNumero int El numero minimo que se desea obtener
@@ -67,4 +86,8 @@ int getChar(char*msj,char letraCorrecta);
  *
  */
 int getString(char str[],char*msj,char*eMsj,int limite,int intentos);
+<<<<<<< HEAD
 #endif // INPUTS_H_INCLUDED
+=======
+
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84

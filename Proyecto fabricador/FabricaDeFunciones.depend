@@ -39,21 +39,32 @@
 
 1556379260 c:\users\lucas\desktop\fabricadefunciones\proyecto fabricador\fnkit.h
 
+<<<<<<< HEAD
 1559771465 source:d:\escritorio\fabricadefunciones\proyecto fabricador\fnkit.c
+=======
+1556379260 source:d:\escritorio\fabricadefunciones\proyecto fabricador\fnkit.c
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	<string.h>
 	"fnKit.h"
 
+<<<<<<< HEAD
 1559771465 d:\escritorio\fabricadefunciones\proyecto fabricador\fnkit.h
 
 1559771817 source:d:\escritorio\fabricadefunciones\proyecto fabricador\main.c
+=======
+1556379260 d:\escritorio\fabricadefunciones\proyecto fabricador\fnkit.h
+
+1556999199 source:d:\escritorio\fabricadefunciones\proyecto fabricador\main.c
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"fnKit.h"
 	<time.h>
+<<<<<<< HEAD
 	"inputs.h"
 
 1559771929 source:d:\escritorio\fabricadefunciones\proyecto fabricador\inputs.c
@@ -64,4 +75,6 @@
 	"inputs.h"
 
 1559772021 d:\escritorio\fabricadefunciones\proyecto fabricador\inputs.h
+=======
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 

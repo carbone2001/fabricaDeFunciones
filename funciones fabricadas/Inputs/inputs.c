@@ -51,6 +51,7 @@ int getIntIntentos(int* input,char* msj,char* eMsj,int minimo,int maximo,int rei
     return error;
 }
 
+<<<<<<< HEAD
 int getInt(int*input,char*msj,char*eMsj,int minimo,int maximo)
 {
     int error = 0;
@@ -66,6 +67,27 @@ int getInt(int*input,char*msj,char*eMsj,int minimo,int maximo)
         error = 1;
     }
     return error;
+=======
+int getInt(char * msj) //TERMINAR
+{
+    int aux;
+    printf("%s",msj);
+    scanf("%d",&aux);
+
+    return aux;
+}
+void getIntPlus(int*input,char*msj,char*eMsj,int minimo,int maximo) //TERMINAR
+{
+    int aux;
+    printf("%s",msj);
+    scanf("%d",input);
+    if(aux>maximo || aux<minimo)
+    {
+        printf("%s",eMsj);
+        //scanf("%d",input);
+    }
+    return aux;
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 }
 int getRandom(int primerNumero, int ultimoNumero,int primeraVez)
 {
@@ -91,17 +113,31 @@ int getChar(char*msj,char letraCorrecta)
     }
     return confirmacion;
 }
+<<<<<<< HEAD
 void getFloatPlus(float*input,char*msj,char*eMsj,float minimo,float maximo)
 {
     printf("%s",msj);
     scanf("%f",input);
     while(*input>maximo || *input<minimo)
+=======
+void getFloatPlus(float*input,char*msj,char*eMsj,float minimo,float maximo) //TERMINAR
+{
+    float aux;
+    printf("%s",msj);
+    scanf("%f",input);
+    while(aux>maximo || aux<minimo)
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
     {
         printf("%s",eMsj);
         scanf("%f",input);
     }
+<<<<<<< HEAD
 }
 int getString(char* str,char*msj,char*eMsj,int limite,int intentos)
+=======
+    return aux;
+int getString(char str[],char*msj,char*eMsj,int limite,int intentos)
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 {
     int error;
     int contador;

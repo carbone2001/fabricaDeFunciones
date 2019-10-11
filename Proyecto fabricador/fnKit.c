@@ -3,7 +3,11 @@
 #include <time.h>
 #include <string.h>
 #include "fnKit.h"
+<<<<<<< HEAD
 /*int ffactorial(int x)
+=======
+int ffactorial(int x)
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 {
     int i;
     int fact;
@@ -292,4 +296,7 @@ int getString(char str[],char*msj,char*eMsj,int limite,int intentos)
     return error;
 }
 
+<<<<<<< HEAD
 */
+=======
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84

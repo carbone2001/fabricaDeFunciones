@@ -3,7 +3,10 @@
 #include <string.h>
 #include "fnKit.h"
 #include <time.h>
+<<<<<<< HEAD
 #include "inputs.h"
+=======
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 #define CANT 5
 
 //int getChar(char *car,char msj[],char eMsj[]);
@@ -12,6 +15,7 @@ int getCuil(char *cuit,int guion);
 
 int main()
 {
+<<<<<<< HEAD
     int numero;
     int error;
     error = getInt(&numero,"Ingrese un numero \n","..que no supere los 30 ni sea inferior de 0\n",0,30);
@@ -24,6 +28,17 @@ int main()
     return 0;
 }
 /*int getCuil(char cuil[],int guion)
+=======
+    char cuil[12];
+    int errores;
+    //getString(cuil,"Ingrese cuil","Error. Cuil invalido.",10,0);
+    errores=getCuil(cuil,1);
+    printf("%s  Errores: %d",cuil,errores);
+
+    return 0;
+}
+int getCuil(char cuil[],int guion)
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 {
     int error;
     char auxCuit[12];
@@ -77,6 +92,10 @@ int main()
 
     return error;
 
+<<<<<<< HEAD
 }*/
+=======
+}
+>>>>>>> 79ce0e9979cc7e2c912b20510ea63da79243ff84
 
 
